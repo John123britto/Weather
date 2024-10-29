@@ -1,0 +1,47 @@
+/* Overall App styling */
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  color: #fff;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Dropdown and button styling */
+select, button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Temperature display box styling */
+.smallBox {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+/* Color changes based on temperature */
+.veryCold { background-color: #3498db; }    /* Below 10°C */
+.cold { background-color: #5dade2; }        /* 10°C to 20°C */
+.moderate { background-color: #48c9b0; }    /* 20°C to 30°C */
+.warm { background-color: #f5b041; }        /* 30°C to 40°C */
+.hot { background-color: #e74c3c; }         /* Above 40°C */
